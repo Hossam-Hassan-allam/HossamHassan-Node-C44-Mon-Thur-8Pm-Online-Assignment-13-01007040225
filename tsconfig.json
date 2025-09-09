@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Environment Settings */
+    "module": "commonjs",       // Use CommonJS for Node.js
+    "target": "ES2020",         // Good balance for Node 14+
+    "lib": ["ES2020"],          // Use modern JS features
+    "types": ["node"],          // Include Node.js types
+
+    /* Other Outputs */
+    // "sourceMap": true,          // Useful for debugging
+    // "declaration": true,        // Generate .d.ts files (optional)
+    
+    /* Strictness & Type Safety */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
+
+    /* Interoperability */
+    "esModuleInterop": true,    // ✅ Fixes your import issue
+    "allowSyntheticDefaultImports": true,
+
+    /* Module Resolution */
+    "moduleResolution": "node", // Resolve modules like Node.js
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
+
